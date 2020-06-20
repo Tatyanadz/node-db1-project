@@ -4,7 +4,7 @@ const db = require('../data/dbConfig.js');
 
 const router = express.Router();
 
-// GET 
+//  GET 
 router.get('/', async (req, res, next) => {
   try {
     res.json(await db.select('*').from('accounts'));
